@@ -1,0 +1,594 @@
+/* styles.css */
+body {
+    display: flex;
+    justify-content: left;
+    flex-direction: row;
+    background-color: #008080; 
+    font-family: 'Courier New', monospace;
+    margin: 0;
+    color: black;
+    display: flex;
+    flex-direction: row;
+}
+
+
+/* Navigation component */
+.desktop {
+    display: flex;
+    flex-direction: column;
+    margin-right: 150px;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.icon {
+    width: 100px;
+    text-align: center;
+    margin: 10px;
+    text-decoration: none;
+    color: black;
+}
+
+.icon img {
+    width: 50px;
+    height: 50px;
+}
+
+.icon p {
+    font-size: 12px;
+}
+
+/* About section */
+
+.about-sidebar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: inset 1px 1px #FFF, inset -1px -1px #000;
+    background-color: #C0C0C0; 
+    border: 2px solid #808080;
+    width: 45%;
+    padding: 0px; 
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: black;
+}
+
+.foto-about {
+    width: 100%;
+    height:100%;
+    object-fit: fill;
+    border: 2px solid #000; 
+    margin-bottom: 15px; 
+    box-shadow: 1px 1px 0px #FFF, -1px -1px 0px #808080; /* 3D-ефект */
+}
+
+.play-zone{
+    background-color: #000;
+    width: 90%;
+    height: 80%;
+}
+
+/* Загальні стилі для зони кнопок */
+.foot-zone {
+    width: 90%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    background-color: #C0C0C0;
+    border: 2px solid #808080;
+    box-shadow: inset 1px 1px #FFF, inset -1px -1px #000; 
+}
+
+.foot-but{
+    display: flex;
+    flex-direction: row;
+}
+
+/* Стилі для кнопок */
+.button {
+    align-items: center;
+    width: 5vh;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px; /* Розмір іконок */
+    font-weight: bold;
+    color: black;
+    background-color: #C0C0C0;
+    border: 2px solid #808080;
+    margin: 5px;
+    cursor: pointer;
+
+    /* 3D-ефект для кнопок */
+    box-shadow: 1px 1px 0px #FFF inset, -1px -1px 0px #000 inset;
+}
+
+/* Ефект натискання кнопки */
+.button:active {
+    box-shadow: inset 1px 1px 0px #000, inset -1px -1px 0px #FFF;
+    background-color: #A0A0A0;
+}
+
+
+
+.file-view-about {
+    background-color: #ebebeb; 
+    border: 2px solid #808080; 
+    color: #ffffff; 
+    padding: 15px;
+    font-size: 16px;
+    font-weight: 600;
+    width: 60%;
+    font-family: "Courier New", monospace;
+    color: #000;
+   
+}
+.code-line {
+    margin: 5px 0;
+}
+
+.indent {
+    margin-left: 20px; 
+}
+
+.indent2 {
+    margin-left: 40px; 
+}
+
+.keyword {
+    color: #569cd6; 
+}
+
+.function-name {
+    color: #e5c07b; 
+}
+
+.variable {
+    color: #98c379; 
+}
+
+.string {
+    color: #d19a66; 
+}
+
+.number {
+    color: #61afef; 
+}
+
+
+/* Edicatioon section*/
+
+
+.myed{
+   
+ 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+
+.desktop-ed {
+    display: flex;
+    flex-direction: column;
+    margin-right: 0px;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+
+.file-explorer-ed {
+    display: inline-block;
+    width: 400px; 
+
+    margin: 10px;
+    
+    background-color: #ffffff;
+    border: 2px solid #000;
+    box-shadow: 4px 4px 0 #808080;
+    color: #000;
+    }
+.file-explorer-ed-3{
+    height: 550px;
+    width: 400px; 
+
+    margin: 10px;
+    
+    background-color: #ffffff;
+    border: 2px solid #000;
+    box-shadow: 4px 4px 0 #808080;
+    color: #000;
+}
+    /* Заголовок вікна */
+    .title-bar-ed {
+    background-color: #7e7e7e;
+    color: white;
+    padding: 10px; 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    }
+    
+    .title-bar-ed .title {
+        color: #b9b9b9;
+    font-weight: bold;
+    font-size: 18px; 
+    }
+        
+    .title-bar .button {
+    width: 20px; 
+    height: 20px; 
+    background-color: #ff0000;
+    border: 1px solid #000;
+    display: inline-block;
+    cursor: pointer;
+    }
+    
+    /* Панель провідника */
+    .explorer-body {
+    display: flex;
+    height: calc(100% - 40px); 
+    }
+    
+    /* Бічне меню */
+    .sidebar {
+    width: 220px; 
+    background-color: #dcdcdc;
+    border-right: 2px solid #808080;
+    padding: 10px;
+    }
+    
+    
+    /* Головне вікно з файлами */
+    .file-view {
+    flex: 1;
+    background-color: #e9e9e9;
+    padding: 20px; 
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px; 
+    max-height: calc(100% - 40px); 
+    overflow-y: auto; 
+    }
+    
+    .file {
+        width: 110px;
+    height: 110px;
+    text-align: center;
+    font-size: 16px; 
+    cursor: pointer;
+    padding: 10px; 
+    transition: background-color 0.3s; 
+    }
+    
+    .file img {
+    width: 80px; 
+    height: 80px; 
+    }
+    
+    /* Стилі для текстів і фону */
+    .file-name {
+    margin-top: 5px;
+    color: #000;
+    }
+    
+    /* Ретро ефект наведеного курсору */
+    .file:hover {
+    background-color: #c0c0c0;
+    padding: 5px;
+    border: 1px solid #808080;
+    }
+
+    .notepad-content {
+        font-family: 'Courier New', Courier, monospace;
+       padding: 20px;
+        white-space:inherit;
+        
+        line-height: 1.5;
+       
+    }
+
+.titl-not{
+    font-size: 9px;
+}
+
+.tit-art{
+    font-size: 16px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Skills section*/
+.file-explorer-skills{
+    width: 900px; 
+
+background-color: #000000;
+border: 2px solid #000;
+box-shadow: 4px 4px 0 #808080;
+color: #000;
+}
+
+
+/* CMD window style */
+.cmd-window {
+    
+    font-family: 'Courier New', monospace;
+    background-color: black;
+    
+    padding: 10px 20px;
+    
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.7);
+    color: #C0C0C0;
+}
+
+.cmd-header, .cmd-subheader {
+    color: #C0C0C0;
+}
+
+.cmd-header {
+    font-weight: bold;
+}
+
+.cmd-subheader {
+    margin-top: 10px;
+    font-size: 0.9rem;
+}
+
+.cmd-line {
+    margin-top: 20px;
+}
+
+.prompt {
+    color: #C0C0C0;
+}
+
+.command {
+    color: white;
+}
+
+#skills-output {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 10px;
+    color: #C0C0C0;
+    white-space: pre-wrap;
+}
+
+
+/* Technologies section*/
+
+.third{
+    
+    font-family: "Tahoma", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+
+}
+/* Стилізація для вікна файлового менеджера */
+.file-explorer {
+width: 900px; 
+height: 500px; 
+background-color: #c0c0c0;
+border: 2px solid #000;
+box-shadow: 4px 4px 0 #808080;
+color: #000;
+}
+
+/* Заголовок вікна */
+.title-bar {
+background-color: #000080;
+color: white;
+padding: 10px; 
+display: flex;
+align-items: center;
+justify-content: space-between;
+}
+
+.title-bar .title {
+font-weight: bold;
+font-size: 18px; 
+}
+
+.title-bar .buttons {
+display: flex;
+gap: 4px;
+}
+
+.title-bar .button {
+width: 20px; 
+height: 20px; 
+background-color: #ff0000;
+border: 1px solid #000;
+display: inline-block;
+cursor: pointer;
+}
+
+/* Панель провідника */
+.explorer-body {
+display: flex;
+height: calc(100% - 40px); 
+}
+
+/* Бічне меню */
+.sidebar {
+width: 220px; 
+background-color: #dcdcdc;
+border-right: 2px solid #808080;
+padding: 10px;
+}
+
+.sidebar h3 {
+font-size: 20px; 
+color: #000080;
+margin-bottom: 10px;
+}
+
+.sidebar ul {
+list-style: none;
+padding: 0;
+font-size: 16px; 
+}
+
+.sidebar ul li {
+margin: 10px 0; 
+cursor: pointer;
+}
+
+/* Головне вікно з файлами */
+.file-view {
+flex: 1;
+background-color: #e9e9e9;
+padding: 20px; 
+display: flex;
+flex-wrap: wrap;
+gap: 30px; 
+max-height: calc(100% - 40px); 
+overflow-y: auto; 
+}
+
+.file {
+    width: 110px;
+height: 110px;
+text-align: center;
+font-size: 16px; 
+cursor: pointer;
+padding: 10px; 
+transition: background-color 0.3s; 
+}
+
+.file img {
+width: 80px; 
+height: 80px; 
+}
+
+/* Стилі для текстів і фону */
+.file-name {
+margin-top: 5px;
+color: #000;
+}
+
+/* Ретро ефект наведеного курсору */
+.file:hover {
+background-color: #c0c0c0;
+padding: 5px;
+border: 1px solid #808080;
+}
+
+
+/* Contacts section*/
+
+
+
+
+.file-explorer-contact{
+    width: 550px; 
+
+    background-color: #000000;
+    border: 2px solid #000;
+    box-shadow: 4px 4px 0 #808080;
+    color: #000;
+}
+
+
+.title-bar-contact {
+    background-color: #C0C0C0;
+    color: white;
+    padding: 10px; 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.title-bar-contact .title {
+    color: #000;
+    font-weight: bold;
+    font-size: 18px; 
+    }
+    
+    .title-bar-contact .buttons {
+    display: flex;
+    gap: 4px;
+    }
+    
+    .title-bar-contact .button {
+    width: 20px; 
+    height: 20px; 
+    background-color: #ff0000;
+    border: 1px solid #000;
+    display: inline-block;
+    cursor: pointer;
+    }
+
+
+
+
+.title-bar .title {
+font-weight: bold;
+font-size: 18px; 
+}
+
+.title-bar .buttons {
+display: flex;
+gap: 4px;
+}
+
+.title-bar .button {
+width: 20px; 
+height: 20px; 
+background-color: #ff0000;
+border: 1px solid #000;
+display: inline-block;
+cursor: pointer;
+}
+
+
+
+
+.ascii-art-title{
+    font-family: monospace;
+    background-color: black;
+    color: lime;
+    padding: 10px;
+}
+.ascii-art {
+    font-size: 10px;
+    line-height: 1;
+    margin: 15px 0;
+}
+.link {
+    color: #00ff00;
+   
+}
+.link:hover {
+    color: #ff0000;
+}
+
+.content {
+    font-family: monospace;
+    background-color: white;
+    padding: 10px;
+    color: black;
+}
+
+
+
+
+

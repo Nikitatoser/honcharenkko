@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мій сайт у стилі Windows 95</title>
+    <link rel="stylesheet" href="win95.css">
+    <link rel="stylesheet" href="adapt.css">
+</head>
+<body>
+    <div class="desktop">
+        <!-- Іконки на робочому столі -->
+        <a href="index.html" class="icon">
+            <img src="foto\artage-io-48186_1730544330.png" alt="Про мене">
+            <p>About</p>
+        </a>
+        <a href="education.html" class="icon">
+            <img src="foto\artage-io-48173_1730544119.png" alt="Навчання">
+            <p>Education</p>
+        </a>
+        <a href="skills.html" class="icon">
+            <img src="foto\artage-io-48169_1730544136.png" alt="Скіли">
+            <p>Skills</p>
+        </a>
+        <a href="technologies.html" class="icon">
+            <img src="foto\artage-io-48177_1730544110.png" alt="Технології">
+            <p>Technologies</p>
+        </a>
+        <a href="contacts.html" class="icon">
+            <img src="foto\artage-io-48158_1730544314.png" alt="Контакти">
+            <p>Contacts</p>
+        </a>
+    </div>
+    <div class="third">
+        <div class="file-explorer">
+            <div class="title-bar">
+                <div class="title">Technologies</div>
+                <div class="buttons">
+                    <div class="button" style="background-color: #ff0000;"></div>
+                    <div class="button" style="background-color: #ffff00;"></div>
+                    <div class="button" style="background-color: #00ff00;"></div>
+                </div>
+            </div>
+            
+            <div class="explorer-body">
+                <!-- Sidebar -->
+                <div class="sidebar">
+                    <h3>Folders</h3>
+                    <ul>
+                        <li onclick="changeContent('lang')">Languages</li>
+                        <li onclick="changeContent('frem')">Frameworks</li>
+                        <li onclick="changeContent('web')">WEB</li>
+                        <li onclick="changeContent('tech')">Technologies</li>
+                        <li onclick="changeContent('data')">Data Base</li>
+                        <li onclick="changeContent('pictures')">Pictures</li>
+                    </ul>
+                </div>
+    
+                <!-- Main file view -->
+                <div class="file-view" id="file-view">
+                    <!-- Контент файлів буде оновлюватися тут -->
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
